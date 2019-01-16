@@ -1,0 +1,11 @@
+<h1
+  *resolve="{ type: 'local', viewModel: { text: 'Local view model' } }; let vm"
+>
+  [[ {{vm | json}} ]]
+</h1>
+
+<h1
+  *resolve="{ type: 'remote', url: 'https://echo.com/get?text=Remote view model' }; let vm"
+>
+  [[ {{vm | json}} ]]
+</h1>
